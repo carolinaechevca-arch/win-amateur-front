@@ -1,0 +1,38 @@
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--color-primary-700);
+  text-decoration: none;
+}
+
+.brand__mark {
+  width: 2.45rem;
+  fill: var(--color-primary-100);
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+}
+
+.brand > span {
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.brand strong {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+}
+
+.brand--inverse {
+  color: #ffffff;
+}
+
+.brand--inverse .brand__mark {
+  fill: rgba(255, 255, 255, 0.13);
+}
