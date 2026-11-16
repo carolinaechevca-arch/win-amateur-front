@@ -10,6 +10,10 @@
   font-weight: 700;
 }
 
+.text-field__control {
+  position: relative;
+}
+
 .text-field input {
   min-width: 0;
   width: 100%;
@@ -18,7 +22,7 @@
   color: var(--color-ink-900);
   background: var(--color-surface-soft);
   border: 1px solid transparent;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-control);
   outline: none;
   transition: border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
 }
@@ -33,16 +37,77 @@
   box-shadow: 0 0 0 4px rgba(110, 86, 219, 0.1);
 }
 
+.text-field input.text-field__input--with-action {
+  padding-right: 3.35rem;
+}
+
+.text-field__password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0.65rem;
+  display: grid;
+  width: 2.1rem;
+  height: 2.1rem;
+  padding: 0;
+  place-items: center;
+  color: var(--color-ink-500);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: color 160ms ease, background-color 160ms ease;
+}
+
+.text-field__password-toggle:hover {
+  color: var(--color-primary-700);
+  background: rgba(110, 86, 219, 0.1);
+}
+
+.text-field__password-toggle:focus-visible {
+  color: var(--color-primary-700);
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+.text-field__password-toggle:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
 .text-field input:user-invalid {
   border-color: var(--color-error);
 }
 
 .text-field--error input {
   border-color: var(--color-error);
+  background: color-mix(in srgb, var(--color-error) 3%, white);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-error) 8%, transparent);
 }
 
 .text-field__error {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.42rem 0.6rem;
   color: var(--color-error);
+  background: color-mix(in srgb, var(--color-error) 7%, white);
+  border-radius: 0.65rem;
   font-size: 0.68rem;
+  font-weight: 700;
   line-height: 1.35;
+}
+
+.text-field__error::before {
+  display: grid;
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+  place-items: center;
+  color: white;
+  background: var(--color-error);
+  border-radius: 50%;
+  content: '!';
+  font-size: 0.62rem;
+  font-weight: 900;
 }

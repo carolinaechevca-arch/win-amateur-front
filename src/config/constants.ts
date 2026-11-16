@@ -8,7 +8,19 @@ export const API_CONFIG = {
   baseUrl: configuredApiBaseUrl.replace(/\/$/, ''),
   endpoints: {
     accountRegistration: '/api/v1/accounts',
+    login: '/api/v1/auth/login',
   },
+} as const
+
+export const APP_ROUTES = {
+  auth: '/',
+  dashboard: '/app',
+} as const
+
+export const STORAGE_KEYS = {
+  authenticatedSession: 'win-amateur:authenticated-session',
+  deviceId: 'win-amateur:device-id',
+  temporarySession: 'win-amateur:temporary-session',
 } as const
 
 export const FORM_CONSTRAINTS = {

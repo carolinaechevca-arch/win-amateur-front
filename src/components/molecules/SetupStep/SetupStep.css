@@ -1,0 +1,7 @@
+.setup-step { position: relative; display: grid; grid-template-columns: 2rem 1fr; gap: .85rem; align-items: start; padding-bottom: 1.05rem; }
+.setup-step:not(:last-child)::after { position: absolute; top: 2rem; bottom: .1rem; left: .95rem; width: 1px; background: var(--color-border); content: ''; }
+.setup-step > span { z-index: 1; display: grid; width: 2rem; height: 2rem; place-items: center; color: var(--color-ink-400); background: var(--color-surface-soft); border: 1px solid var(--color-border); border-radius: 50%; font-size: .7rem; font-weight: 850; }
+.setup-step--completed > span { color: #fff; background: var(--color-primary-600); border-color: var(--color-primary-600); }
+.setup-step div { display: grid; padding-top: .05rem; }
+.setup-step strong { font-size: .8rem; }
+.setup-step small { color: var(--color-ink-400); font-size: .68rem; line-height: 1.45; }

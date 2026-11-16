@@ -1,0 +1,5 @@
+.badge { display: inline-flex; align-items: center; width: fit-content; padding: .32rem .65rem; border-radius: 999px; font-size: .68rem; font-weight: 800; letter-spacing: .02em; }
+.badge--primary { color: var(--color-primary-700); background: var(--color-primary-100); }
+.badge--success { color: #207453; background: #e9f8f1; }
+.badge--warning { color: #9b651b; background: #fff4dd; }
+.badge--neutral { color: var(--color-ink-600); background: var(--color-surface-soft); }

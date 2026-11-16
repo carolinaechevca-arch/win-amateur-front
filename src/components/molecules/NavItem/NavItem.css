@@ -1,0 +1,21 @@
+.nav-item { position: relative; display: grid; width: 3rem; height: 3rem; place-items: center; color: rgba(255,255,255,.62); border-radius: 50%; text-decoration: none; transition: color 180ms ease, background 180ms ease, transform 180ms ease; }
+.nav-item:hover { color: #fff; background: rgba(255,255,255,.1); transform: translateY(-2px); }
+.nav-item--active { color: var(--color-primary-700); background: #fff; box-shadow: 0 10px 22px rgba(31,21,93,.22); }
+.nav-item__label { position: absolute; left: 3.7rem; z-index: 10; padding: .38rem .65rem; color: #fff; background: var(--color-ink-900); border-radius: .55rem; font-size: .7rem; font-weight: 700; opacity: 0; pointer-events: none; transform: translateX(-.35rem); transition: opacity 160ms ease, transform 160ms ease; white-space: nowrap; }
+.nav-item:hover .nav-item__label { opacity: 1; transform: translateX(0); }
+.nav-item__dot { position: absolute; top: .4rem; right: .42rem; width: .42rem; height: .42rem; background: #ffcf5a; border: 2px solid var(--color-primary-600); border-radius: 50%; }
+.nav-item--expanded { display: flex; width: 100%; height: 2.8rem; justify-content: flex-start; gap: .78rem; padding: 0 .9rem; color: var(--color-ink-600); border-radius: var(--radius-control); }
+.nav-item--expanded:hover { color: var(--color-primary-700); background: var(--color-primary-100); transform: translateX(.15rem); }
+.nav-item--expanded.nav-item--active { color: #fff; background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-700)); box-shadow: 0 10px 22px rgba(68,56,168,.24); }
+.nav-item--expanded .nav-item__label { position: static; padding: 0; color: inherit; background: transparent; border-radius: 0; font-size: .76rem; opacity: 1; transform: none; }
+.nav-item--expanded:hover .nav-item__label { transform: none; }
+.nav-item--expanded .nav-item__dot { top: 50%; right: .85rem; border-color: #fff; transform: translateY(-50%); }
+
+@media (max-width: 760px) {
+  .nav-item { width: 2.8rem; height: 2.8rem; }
+  .nav-item--expanded { display: grid; padding: 0; color: rgba(255,255,255,.62); }
+  .nav-item--expanded:hover { color: #fff; background: rgba(255,255,255,.1); transform: translateY(-2px); }
+  .nav-item--expanded.nav-item--active { color: var(--color-primary-700); background: #fff; }
+  .nav-item__label { display: none; }
+  .nav-item--active { color: var(--color-primary-700); }
+}

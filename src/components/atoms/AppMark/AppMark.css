@@ -1,0 +1,5 @@
+.app-mark { display: inline-flex; align-items: center; gap: 0.65rem; color: inherit; }
+.app-mark svg { width: 2.35rem; fill: rgba(255,255,255,.1); stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.2; }
+.app-mark span { font-size: 0.8rem; font-weight: 900; letter-spacing: 0.08em; line-height: 1; }
+.app-mark strong { display: block; margin-top: .18rem; font-size: .56rem; letter-spacing: .18em; }
+.app-mark--compact svg { width: 2.55rem; }

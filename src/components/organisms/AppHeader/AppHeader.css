@@ -1,0 +1,7 @@
+.app-header { position: sticky; z-index: 20; top: 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 1rem; min-height: 5.25rem; padding: 1rem 0; background: rgba(245,244,248,.86); backdrop-filter: blur(16px); }
+.app-header__search { display: flex; align-items: center; gap: .65rem; height: 2.75rem; padding: 0 .9rem; color: var(--color-ink-400); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-control); }
+.app-header__search input { width: 100%; min-width: 0; color: var(--color-ink-900); background: transparent; border: 0; outline: 0; font-size: .75rem; }
+.app-header__profile { display: flex; align-items: center; }
+.app-header__profile > span { display: grid; width: 2.65rem; height: 2.65rem; place-items: center; color: #fff; background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-700)); border-radius: 50%; font-size: .72rem; font-weight: 850; }
+
+@media (max-width: 600px) { .app-header { gap: .65rem; min-height: auto; padding: .8rem 0; } .app-header__search { height: 2.6rem; } .app-header__profile > span { width: 2.6rem; height: 2.6rem; } }
