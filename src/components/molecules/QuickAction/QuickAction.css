@@ -1,0 +1,7 @@
+.quick-action { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: .8rem; padding: .9rem; color: inherit; border: 1px solid transparent; border-radius: 1rem; text-decoration: none; transition: background 180ms ease, border-color 180ms ease, transform 180ms ease; }
+.quick-action:hover { background: var(--color-surface-soft); border-color: var(--color-border); transform: translateX(3px); }
+.quick-action > span { display: grid; width: 2.5rem; height: 2.5rem; place-items: center; color: var(--color-primary-700); background: var(--color-primary-100); border-radius: .85rem; }
+.quick-action div { display: grid; min-width: 0; }
+.quick-action strong { font-size: .8rem; }
+.quick-action small { color: var(--color-ink-400); font-size: .67rem; }
+.quick-action > svg { color: var(--color-ink-400); }

@@ -18,7 +18,7 @@
   color: var(--color-ink-900);
   background: var(--color-surface-soft);
   border: 1px solid transparent;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-control);
   outline: none;
   cursor: pointer;
   transition: border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
@@ -32,10 +32,33 @@
 
 .select-field--error select {
   border-color: var(--color-error);
+  background: color-mix(in srgb, var(--color-error) 3%, white);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-error) 8%, transparent);
 }
 
 .select-field__error {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.42rem 0.6rem;
   color: var(--color-error);
+  background: color-mix(in srgb, var(--color-error) 7%, white);
+  border-radius: 0.65rem;
   font-size: 0.68rem;
+  font-weight: 700;
   line-height: 1.35;
+}
+
+.select-field__error::before {
+  display: grid;
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+  place-items: center;
+  color: white;
+  background: var(--color-error);
+  border-radius: 50%;
+  content: '!';
+  font-size: 0.62rem;
+  font-weight: 900;
 }

@@ -1,0 +1,8 @@
+.dashboard-layout { min-height: 100vh; min-height: 100dvh; background: #f5f4f8; }
+.dashboard-layout__content { width: min(calc(100% - 7.25rem), 92rem); margin-left: 6.25rem; padding-right: 1rem; transition: width 280ms ease, margin-left 280ms ease; }
+.dashboard-layout--sidebar-expanded .dashboard-layout__content { width: min(calc(100% - 20.5rem), 92rem); margin-left: 19.5rem; }
+.dashboard-layout__content > main { padding-bottom: 2rem; }
+
+@media (min-width: 1550px) { .dashboard-layout__content { margin-right: auto; } }
+@media (max-width: 760px) { .dashboard-layout__content, .dashboard-layout--sidebar-expanded .dashboard-layout__content { width: 100%; margin-left: 0; padding: 0 1rem; } .dashboard-layout__content > main { padding-bottom: 6rem; } }
+@media (max-width: 420px) { .dashboard-layout__content { padding: 0 .65rem; } }

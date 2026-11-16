@@ -1,0 +1,9 @@
+.tournament-card { display: grid; min-width: 0; min-height: 13.5rem; align-content: space-between; gap: 1.2rem; padding: 1.3rem; background: #fff; border: 1px solid rgba(68,56,168,.08); border-radius: 1.35rem; box-shadow: 0 13px 32px rgba(37,29,78,.06); transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease; }
+.tournament-card:hover { border-color: rgba(110,86,219,.24); box-shadow: 0 18px 40px rgba(37,29,78,.1); transform: translateY(-3px); }
+.tournament-card header { display: flex; align-items: center; justify-content: space-between; }
+.tournament-card__icon { display: grid; width: 2.7rem; height: 2.7rem; place-items: center; color: #fff; background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-700)); border-radius: 50%; box-shadow: 0 9px 20px rgba(68,56,168,.22); }
+.tournament-card h3 { margin: 0 0 .45rem; font-size: .98rem; letter-spacing: -.025em; }
+.tournament-card p { display: flex; align-items: center; gap: .35rem; margin: 0; color: var(--color-ink-600); font-size: .7rem; }
+.tournament-card p i { width: .25rem; height: .25rem; margin: 0 .15rem; background: var(--color-primary-500); border-radius: 50%; }
+.tournament-card small { display: block; margin-top: .6rem; color: var(--color-ink-400); font-size: .61rem; font-weight: 750; letter-spacing: .04em; }
+.tournament-card > a { display: inline-flex; width: fit-content; align-items: center; gap: .4rem; color: var(--color-primary-700); font-size: .73rem; font-weight: 850; text-decoration: none; }

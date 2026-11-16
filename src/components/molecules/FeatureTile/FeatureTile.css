@@ -1,0 +1,5 @@
+.feature-tile { min-width: 0; padding: 1.15rem; background: var(--color-surface-soft); border: 1px solid transparent; border-radius: 1rem; transition: transform 180ms ease, border-color 180ms ease; }
+.feature-tile:hover { transform: translateY(-3px); border-color: var(--color-border); }
+.feature-tile > span { display: grid; width: 2.5rem; height: 2.5rem; place-items: center; color: var(--feature-accent); background: color-mix(in srgb, var(--feature-accent) 12%, white); border-radius: .8rem; }
+.feature-tile h3 { margin: .9rem 0 .35rem; font-size: .84rem; }
+.feature-tile p { margin: 0; color: var(--color-ink-400); font-size: .68rem; line-height: 1.5; }

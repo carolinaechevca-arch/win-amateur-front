@@ -15,5 +15,7 @@
   --radius-sm: 0.75rem;
   --radius-md: 1.25rem;
   --radius-lg: 2rem;
+  --radius-control: 999px;
+  --radius-control-compact: 999px;
   --transition-auth: 720ms cubic-bezier(0.77, 0, 0.18, 1);
 }
